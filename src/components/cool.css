@@ -1,0 +1,22 @@
+#content {
+    max-height: 20px;
+    overflow: hidden;
+    border-color: red;
+    
+
+
+    transition: max-height .7s;
+}
+#hide{
+    display:none;
+}
+
+#content.oop{
+    
+}
+
+#open{
+    border: 5px solid black;
+    display: block;
+    color: red;
+}

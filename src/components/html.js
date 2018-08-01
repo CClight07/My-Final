@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
+var button = document.getElementById ("content");
+var link = document.getElementById ("open");
 
-class Html extends Component {
-  render() {
-    return (
-      <div>
-        <h4>Html Code</h4>
-        <p>When clicked it will show you code and what is does</p>
-      </div>
-    );
-  }
-}
-
-export default Html
+button.onclick = function myFunction(){
+    if(link.className === ("oop")){
+        button.className = "";
+        link.innerHTML = "Html Code";
+    }
+    else{
+        button.className = "oop";
+        link.innerHTML = "close";
+    }
+};
